@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Figtree;
+    src: url(Figtree-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: Figtree;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+}
+
+h2{
+    padding-top: 5%;
+    font-family: Figtree;
+}
+
+p {
+    padding-top: 5%;
+    font-family: Figtree;
+}
+
+.card {
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 1px 10px 20px gray;
+}
+
+#supervisor{
+    border-top: 5px #44CACB solid;
+}
+
+#team-builder{
+    border-top: 5px red solid;
+}
+
+#karma {
+    border-top: 5px #EFA953 solid;
+
+}
+
+#calculator {
+    border-top: 5px #64A3E9 solid;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 5%;
+    left: 85%;
+}
+
+@media (min-width:1200px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    #supervisor{
+        width: 400px;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        height: 300px;
+
+    }
+
+    #team-builder {
+        width: 400px;
+        grid-column:2/2;
+        grid-row: 2/1;
+        height: 300px;
+        margin-bottom: -30%;
+    }
+
+    #karma{
+        width: 400px;
+        grid-column: 1/span 3;
+        height: 300px;
+        margin-top: -10%;
+    }
+
+    #calculator{
+        width: 400px;
+        grid-column: 3/3;
+        grid-row: 3/2;
+        height: 300px;
+    }
+
+}
